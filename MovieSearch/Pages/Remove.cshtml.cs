@@ -35,9 +35,9 @@ namespace MovieSearch.Pages
 
                 Message = "Removed!";
 
-            }catch(Exception e)
+            }catch(Exception ex)
             {
-                Message = "Opreation Failed";
+                Message ="Opreation Failed "+ ex;
             }
         }
     }

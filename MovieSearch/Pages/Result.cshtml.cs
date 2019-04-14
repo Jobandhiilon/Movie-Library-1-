@@ -58,7 +58,7 @@ namespace MovieSearch.Pages
                         }
                         catch (Exception e)
                         {
-                            Message = "Sorry no movie with this name found. Please try again.";
+                            Message = "Sorry no movie with this name found. Please try again." + e;
                         }
                     }
                 }
@@ -66,7 +66,7 @@ namespace MovieSearch.Pages
 
                 catch (WebException ex)
                 {
-                    Message = "Something went wrong. Please try again.";
+                    Message = "Something went wrong. Please try again." + ex;
                 }
 
             }
